@@ -4,12 +4,96 @@
     <meta charset="utf-8">
     <title></title>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="css.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
+    <div>
+      <button onclick="displayDate()">Click Me To Display Current Date</button>
+      <p id="display-element"></p>
+    </div>
+    
+    <div>
+      <button onclick="numToString()">Click to Convert Number To String</button>
+      <input type="text" id="numToStringField" >
+      <p id="numToString"></p>
+    </div>
+    
+    <div>
+      <button onclick="stringToNum()">Click to Convert String To Number</button>
+      <input type="text" id="stringToNumField">
+      <p id="stringToNum"></p>
+    </div>
+
+    <div>
+      <button onclick="showDataTypes()">Click to Show DataType</button>
+      <select id="SDT" class="doubleDrop">
+        <option value="Boolean">Boolean</option>
+        <option value='Null'>Null</option>
+        <option value='Undefined'>Undefined</option>
+        <option value='Number'>Number</option>
+        <option value='NaN'>NaN</option>
+        <option value='String'>String</option>
+      </select>
+      <p id="showDataTypes"></p>
+    </div>
+
+    <div>
+      <button onclick="addTwoNumbers()">Click to Add Both Numbers Together</button>
+      <input type="number" id="Num1" class="doubleInputs">
+      <input type="number" id="Num2" class="doubleInputs">
+      <p id="addTwoNumbers"></p>
+    </div>
+
+    <div>
+      <button onclick="runWhenBothTrue()">Click to Check if Both are True</button>
+      <select id="RWBT1" class="doubleDrop">
+        <option value='1'>True</option>
+        <option value='0'>False</option>
+        <option value='1'>1</option>
+        <option value='0'>0</option>
+      </select>
+      <select id="RWBT2" class="doubleDrop">
+        <option value='1'>True</option>
+        <option value='0'>False</option>
+        <option value='1'>1</option>
+        <option value='0'>0</option>
+      </select>
+      <p id="runWhenBothTrue"></p>
+    </div>
+
+    <div>
+      <button onclick="runWhenOneTrue()">Click to Check if One Value is True</button>
+      <select id="RWOT1" class="doubleDrop">
+        <option value='1'>True</option>
+        <option value='0'>False</option>
+        <option value='1'>1</option>
+        <option value='0'>0</option>
+      </select>
+      <select id="RWOT2" class="doubleDrop">
+        <option value='1'>True</option>
+        <option value='0'>False</option>
+        <option value='1'>1</option>
+        <option value='0'>0</option>
+      </select>
+      <p id="runWhenOneTrue"></p>
+    </div>
+
+    <div>
+      <button onclick="runWhenBothFalse()">Click to Check if Both are False</button>
+      <select id="RWBF1" class="doubleDrop">
+        <option value='1'>True</option>
+        <option value='0'>False</option>
+        <option value='1'>1</option>
+        <option value='0'>0</option>
+      </select>
+      <select id="RWBF2" class="doubleDrop">
+        <option value='1'>True</option>
+        <option value='0'>False</option>
+        <option value='1'>1</option>
+        <option value='0'>0</option>
+      </select>
+      <p id="runWhenBothFalse"></p>
+    </div>
+    
   </body>
 </html>
