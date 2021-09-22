@@ -96,8 +96,7 @@ let addTwoNumbers = () => {
   }
   else {document.getElementById("addTwoNumbers").innerHTML = `The inputed values ${num1} and ${num2} equal ${num1+num2}`
 }
-  
-}
+}   
 
 
 // Write a JavaScript program that runs only when 2 things are true.
@@ -158,3 +157,10 @@ else {document.getElementById("runWhenBothFalse").innerHTML = 'One or more of th
 // Video1: https://player.vimeo.com/video/377147232
 // Video2: https://www.youtube.com/embed/bkvH28PXLWc
 // Video3: https://www.youtube.com/embed/TrGI9Yki-24
+
+function test(params) {
+  let testvar = document.getElementById("testinput").value
+  let anothervar = 1 + testvar
+  console.log(anothervar)
+  console.log(typeof(anothervar))
+}
